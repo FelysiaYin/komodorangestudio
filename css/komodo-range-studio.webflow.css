@@ -1354,8 +1354,8 @@ img {
   .gallery-container {
     grid-column-gap: 0px;
     grid-row-gap: 0px;
-    height: 40vh;
-    overflow: hidden;
+    height: 100%;
+    overflow: visible;
   }
 
   .gallery-section {
@@ -1363,6 +1363,7 @@ img {
     height: 400px;
     transition: opacity .2s;
     display: flex;
+    overflow: hidden;
   }
 
   .column {
