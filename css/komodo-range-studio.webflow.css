@@ -6,6 +6,432 @@
   --black: #222;
 }
 
+/* Wen - Froggy Brews Landing Page stuff */
+.game-heading {
+  color: #433160;
+}
+.game-page .game-nav-wrapper {
+  width: 100%;
+  position: relative;
+}
+
+.game-page body {
+  padding-top: 96px; /* Compensate for fixed nav */
+}
+
+.game-hero {
+  background: url('../froggy_media/Cover_Art_Grouped.jpg') no-repeat center;
+  background-size: cover;
+  height: 684px;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+  overflow: visible;
+  will-change: transform;
+
+  padding-bottom: 30px;
+}
+
+.hero-logo-container{
+  position: absolute;
+  top: 20%; 
+  left: 50%;
+  transform: translateX(-50%); 
+  width: 100%;
+  max-width: 600px; 
+  padding: 0 20px;
+  text-align: center;
+}
+
+.game-nav {
+  background: white !important;
+  height: 80px;
+  width: 100% !important;
+  position: fixed !important; 
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.game-nav-container {
+  max-width: none !important;
+  padding: 22px 0 !important; 
+  height: 50%;
+  display: flex;
+  align-items: center;  
+  /* border: 1px solid green; */
+}
+
+.game-nav-brand {
+  margin-right: auto;
+  padding-left: 10px;
+  min-width: 150px;
+}
+
+.game-nav-brand img {
+  width: 203px;
+  height: auto;
+  max-height: 80px;
+  object-fit: contain;
+  /* border: 1px solid blue; */
+
+}
+
+.game-nav-menu {
+  margin-left: auto;
+  display: flex !important;
+  flex-wrap:nowrap;
+  align-items: center;
+  gap: 30px; 
+  padding-right: 20px;
+  /* border: 1px solid blue; */
+}
+
+.game-nav-link {
+  color: black !important;
+  position: relative;
+  padding-top: 6px;
+  padding-bottom: 0 !important;
+  
+  font-size: 20px !important;
+  font-weight: 400 !important;
+}
+.game-nav-link::before {
+  content: '';
+  position: absolute;
+  top: 0; /* Position above text */
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: black;
+  transition: width 0.3s ease;
+}
+.game-nav-link[aria-current="page"]::before {
+  /* border-bottom: 2px solid black !important; /* Solid underline */
+  /* padding-bottom: 2px !important;  */
+  content:'';
+  position: absolute;
+  top: 0; /* Changed from bottom: 0 */
+  left: 0;
+  width: 100% !important;
+  height: 2px;
+  background: black;
+}
+
+.game-nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: black;
+  transition: width 0.3s ease;
+}
+
+.game-nav-link:hover {
+  color: black !important;
+}
+
+.game-nav-link:hover::before {
+  width: 100%;
+}
+
+.game-nav-link.w--current {
+  border-bottom: 2px solid black !important;
+}
+
+.section-divider {
+  position: absolute;
+  bottom: -250px;
+  width: 100%;
+  height: 290px;
+  background: 
+    repeat-x 
+    url('../froggy_media/website_dividers_1.png')
+    center / auto 100%; 
+  position: relative;
+  z-index: 600; 
+  pointer-events: none;
+  /* border: 1px solid red; */
+}
+
+.divider-image {
+  width: 100%;
+  max-width: 1200px; /* Prevent over-stretching */
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  pointer-events: none; /* Allows clicks to pass through */
+  flex-wrap: wrap;
+}
+
+.next-section {
+  position: relative;
+  z-index: 500; /* Below fence */
+  margin-top: -40px; 
+  background:
+  url('../froggy_media/website_seamless_pattern_background.png') center/cover,
+  #fbf9e4;
+  background-blend-mode: overlay;
+  height: 696px;
+  overflow: hidden;
+  margin-bottom: -10px;
+}
+
+.content-border {
+  position: relative;
+  width: 90%; 
+  height: 80%;
+  max-width: 900px; 
+  max-height: 557;
+  margin: 40px auto;
+}
+
+.sticker {
+  position: absolute;
+  width: 80px; 
+  z-index: 2;
+  pointer-events: none;
+}
+
+.sticker-top-left {
+  top: -30px;
+  left: -60px;
+  width: 180px;
+}
+
+.sticker-bottom-right {
+  bottom: -10px;
+  right: -60px;
+  width: 180px;
+
+}
+
+/* Border Image */
+.border-image {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  object-position: center;
+  display: block;
+}
+
+/* Content Inside Border */
+.border-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%; /* Content area within border */
+  text-align: center;
+  padding: 5%;
+}
+
+/* Text Styling */
+.border-content h2 {
+  font-family: 'Changa One', cursive;
+  color: #3a2c1a;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* Steam Button */
+.steam-button {
+  display: inline-block;
+  margin-top: 30px;
+}
+.steam-button img {
+  width: 200px;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+.steam-button:hover img {
+  transform: scale(1.05);
+}
+
+/* Video Section */
+.video-section {
+  height: 800px; 
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; 
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -10px;
+  margin-bottom: -16px;
+}
+
+/* Overlay for readability */
+.video-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 684px;
+  background: rgba(0,0,0,0); 
+}
+
+/* Video Container */
+.video-container {
+  position: relative;
+  z-index: 2; /* Above overlay */
+  width: 90%;
+  max-width: 1200px;
+  padding: 40px;
+  text-align: center;
+}
+
+/* Responsive Video Embed */
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+  height: 0;
+  overflow: hidden;
+  border-radius: 8px; /*this round edge of youtube border*/
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* Optional: Add game-themed border */
+.video-wrapper::after {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  border: 2px solid #8bc34a; /* Froggy green */
+  /* border-radius: 20px; */
+  z-index: -1;
+  pointer-events: none;
+}
+
+/* Awards Section */
+.awards-section {
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+}
+/* 
+Video Background
+.awards-video-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1; */
+/* } */
+
+.beach-video-bg {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: -95%;
+  left: 0;
+  min-height: 300px;
+  object-fit: cover;
+  opacity: 0.8; /* Adjust as needed */
+}
+
+/* Content Container */
+.awards-container {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding-top: 60px;
+  height: 100%;
+}
+
+/* Award Boxes */
+.awards-box {
+  width: 280px;
+  height: 180px;
+  background: rgba(255,255,255,0.9);
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: 2px solid #4ECDC4;
+}
+
+.awards-box h3 {
+  color: #2C3E50;
+  margin-bottom: 10px;
+}
+
+.awards-box p {
+  color: #7F8C8D;
+}
+
+
+
+/* Responsive Adjustments */
+@media (max-width: 767px) {
+  .game-nav-container {
+    padding: 0 10px !important;
+  }
+  .game-nav-menu {
+    gap: 10px;
+    padding-right: 10px; 
+    display: none;
+  }
+  .game-nav-link {
+    font-size: 14px;
+    padding: 5px !important;
+  }
+   .game-hero {
+    height: 500px;
+    background-position: 60% center; /* Adjust focal point */
+  }
+  .content-border {
+    width: 95%;
+  }
+  .border-content {
+    width: 90%;
+  }
+  .border-content h2 {
+    font-size: 1.5rem;
+  }
+  .steam-button img {
+    width: 150px;
+  }
+  .video-section {
+    height: 500px; /* Shorter on mobile */
+    background-attachment: scroll; /* Disable parallax */
+  }
+  .video-wrapper {
+    border-radius: 8px; /* Tighter curve */
+  }
+}
+
+
+
+
+/*old stuff*/
+
 .w-layout-blockcontainer {
   max-width: 940px;
   margin-left: auto;
