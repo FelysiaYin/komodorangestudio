@@ -8,8 +8,10 @@
 
 /* Wen - Froggy Brews Landing Page stuff */
 .game-heading {
-  color: #433160;
+  color: #433160 !important;
+  /* border: 2px solid #4ECDC4; */
 }
+
 .game-page .game-nav-wrapper {
   width: 100%;
   position: relative;
@@ -20,10 +22,11 @@
 }
 
 .game-hero {
-  background: url('../froggy_media/Cover_Art_Grouped.jpg') no-repeat center;
+  background: url('../froggy_media/_new/website_coverart_background.png') no-repeat center;
   background-size: cover;
-  height: 684px;
-  width: 100%;
+  height:600px;
+  width: auto;
+  max-width: 1920px;
 
   display: flex;
   align-items: center;
@@ -38,10 +41,10 @@
 
 .hero-logo-container{
   position: absolute;
-  top: 20%; 
+  top: 27%; 
   left: 50%;
   transform: translateX(-50%); 
-  width: 100%;
+  width: auto;
   max-width: 600px; 
   padding: 0 20px;
   text-align: center;
@@ -147,9 +150,9 @@
 
 .section-divider {
   position: absolute;
-  bottom: -250px;
+  bottom: -170px;
   width: 100%;
-  height: 290px;
+  height: 450px;
   background: 
     repeat-x 
     url('../froggy_media/website_dividers_1.png')
@@ -157,7 +160,26 @@
   position: relative;
   z-index: 600; 
   pointer-events: none;
-  /* border: 1px solid red; */
+  background-image: url(../froggy_media/website_seamless_pattern_background.png);
+  background-blend-mode: overlay;
+}
+
+
+.section-divider2 {
+  position: absolute;
+  bottom: -77px;
+  left: 0;
+  width: 100%;
+  height: 400px;
+  background: 
+  url('../froggy_media/website_dividers_2.png')
+    repeat-x 
+    center bottom/ auto 100%; 
+  /* position: relative; */
+  z-index: 6; 
+  pointer-events: none;
+  border: 1px solid red;
+
 }
 
 .divider-image {
@@ -178,18 +200,20 @@
   url('../froggy_media/website_seamless_pattern_background.png') center/cover,
   #fbf9e4;
   background-blend-mode: overlay;
-  height: 696px;
+  height: 684px;
   overflow: hidden;
   margin-bottom: -10px;
 }
 
 .content-border {
   position: relative;
-  width: 90%; 
+  width: min(90%, 1152px);
+  margin: 0 auto 70px; 
+  /*width: 90%; 
   height: 80%;
   max-width: 900px; 
   max-height: 557;
-  margin: 40px auto;
+  margin: 40px auto; */
 }
 
 .sticker {
@@ -209,15 +233,35 @@
   bottom: -10px;
   right: -60px;
   width: 180px;
+}
 
+.sticker-mailbox {
+  position: absolute;
+  bottom: 80px;
+  right: 150px;
+  width: 180px;
 }
 
 /* Border Image */
 .border-image {
-  width: 100%;
-  height: 100%;
+  padding-top: 15px;
+  width: auto;
+  height: auto;
   object-fit: fill;
   object-position: center;
+  display: block;
+}
+
+.border-image2 {
+  width: auto;
+  height: auto;
+  display: block; 
+  padding-bottom: 70px;
+}
+
+.border-image3 {
+  width: auto;
+  height: auto;
   display: block;
 }
 
@@ -229,7 +273,7 @@
   transform: translate(-50%, -50%);
   width: 80%; /* Content area within border */
   text-align: center;
-  padding: 5%;
+  /* padding: 5%; */
 }
 
 /* Text Styling */
@@ -259,7 +303,7 @@
   height: 800px; 
   background-size: cover;
   background-position: center;
-  background-attachment: fixed; 
+  background-attachment: fixed; /*i think this is what makes it parallax*/
   position: relative;
   display: flex;
   align-items: center;
@@ -282,10 +326,12 @@
 /* Video Container */
 .video-container {
   position: relative;
-  z-index: 2; /* Above overlay */
-  width: 90%;
+  z-index: 2; 
+  width: 80%;
   max-width: 1200px;
   padding: 40px;
+  padding-top: 70px;
+  padding-bottom: 70px;
   text-align: center;
 }
 
@@ -327,6 +373,7 @@
   height: 300px;
   position: relative;
   overflow: hidden;
+  margin-bottom: -15px;
 }
 /* 
 Video Background
@@ -340,14 +387,14 @@ Video Background
 /* } */
 
 .beach-video-bg {
-  width: 100%;
+  width: auto;
   height: auto;
   position: absolute;
-  top: -95%;
+  top: -180%;
   left: 0;
   min-height: 300px;
   object-fit: cover;
-  opacity: 0.8; /* Adjust as needed */
+  opacity: 0.95; 
 }
 
 /* Content Container */
@@ -363,8 +410,8 @@ Video Background
 
 /* Award Boxes */
 .awards-box {
-  width: 280px;
-  height: 180px;
+  width: 320px;
+  height: 160px;
   background: rgba(255,255,255,0.9);
   border-radius: 12px;
   padding: 20px;
@@ -386,7 +433,114 @@ Video Background
   color: #7F8C8D;
 }
 
+.game-footer {
+  background-color: white;
+  height: 300px;
+  width: 100%;
+  padding-bottom: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 10;
+}
 
+.socials-section {
+  height: 250px;
+  width: 100%; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-bottom: -16px;
+  background-color: #fbf9e4;
+  background-image: url(../froggy_media/_new/website_seamless_pattern_background_2.png);
+  background-blend-mode: overlay;
+  z-index: 0;
+  overflow: hidden;
+    /* border: 2px solid #4ECDC4; */
+
+}
+.description-section {
+  background-image: url(../froggy_media/_new/website_seamless_pattern_background_2.png);
+  background-blend-mode: overlay;
+  background-color: #fbf9e4;
+  /* height: 1872px; */
+  width: 100%; 
+  padding: 70px;
+  margin-top: -1px;
+  /* outline: 1px solid red; */
+}
+
+.presskit-section {
+  height: 300px;
+  width: 100%; 
+  background-image: url(../froggy_media/_new/website_crystalfalls_background.png);
+  margin-bottom: -16px;
+  margin-top: -16px;
+}
+
+.newsletter-section {
+  height: 700px;
+  width: 100%;
+  display: flex;
+  position: relative;
+  background-image: url(../froggy_media/_new/website_frogprints_pattern_background.png);
+  background-attachment: fixed;
+  margin-bottom: -16px;
+  justify-content: center;
+  align-items: center;
+  /* outline: 2px solid blue; */
+}
+
+.newsletter-box {
+  width: min(1152px, 60%);
+  height: 560px; 
+  background: rgba(255,255,255,0.9);
+  margin: 0 auto;
+  border-radius: 12px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  outline: 2px solid red;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding-bottom: 40px; /* Distance above divider */
+  width: 100%;
+  max-width: 1200px;
+  margin: -30px auto 0;
+  z-index: 3; /* Above divider */
+}
+
+/* Individual Icons */
+.social-icon {
+  width: 50px;
+  height: 50px;
+  transition: transform 0.3s ease;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+}
+
+.social-icon:hover {
+  transform: scale(1.1);
+}
+
+.social-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
 
 /* Responsive Adjustments */
 @media (max-width: 767px) {
@@ -424,6 +578,14 @@ Video Background
   }
   .video-wrapper {
     border-radius: 8px; /* Tighter curve */
+  }
+  .social-icons {
+    gap: 20px;
+    padding-bottom: 30px;
+  }
+  .social-icon {
+    width: 40px;
+    height: 40px;
   }
 }
 
