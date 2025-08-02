@@ -12,6 +12,15 @@
   /* border: 2px solid #4ECDC4; */
 }
 
+pre.game-heading {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-family: Lato, sans-serif;
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
 .game-page .game-nav-wrapper {
   width: 100%;
   position: relative;
@@ -196,7 +205,9 @@
 
 .next-section {
   position: relative;
-  z-index: 500; /* Below fence */
+  z-index: 50; /* Below fence */
+  display: flex;
+  justify-content: center;
   margin-top: -40px; 
   background:
   url('../froggy_media/website_seamless_pattern_background.png') center/cover,
@@ -205,6 +216,7 @@
   height: 684px;
   overflow: hidden;
   margin-bottom: -10px;
+  padding-top: 50px;
 }
 
 .content-border {
@@ -263,9 +275,11 @@
 
 /* Border Image */
 .border-image {
-  padding-top: 15px;
-  width: auto;
+  /* padding-top: 15px; */
+  width: 100%;
   height: auto;
+  max-width: 1000px;
+  margin: 0 auto;
   object-fit: fill;
   object-position: center;
   display: block;
@@ -290,7 +304,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 80%; /* Content area within border */
+  width: 70%; /* Content area within border */
   text-align: center;
   /* padding: 5%; */
 }
