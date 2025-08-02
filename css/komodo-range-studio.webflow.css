@@ -249,9 +249,16 @@
 
 .sticker-star {
   position: absolute;
-  bottom: 1000px;
-  right: 100px;
-  width: 220px;
+  bottom: -40px;
+  right: 240px;
+  width: 100px;
+}
+
+.sticker-star2 {
+  position: absolute;
+  bottom: 1120px;
+  right: 1100px;
+  width: 100px;
 }
 
 /* Border Image */
