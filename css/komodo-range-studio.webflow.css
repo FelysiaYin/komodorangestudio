@@ -421,7 +421,7 @@ Video Background
   justify-content: center;
   align-items: center;
   text-align: center;
-  border: 2px solid #4ECDC4;
+  border: none;
 }
 
 .awards-box h3 {
@@ -479,6 +479,9 @@ Video Background
   background-image: url(../froggy_media/_new/website_crystalfalls_background.png);
   margin-bottom: -16px;
   margin-top: -16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .newsletter-section {
@@ -508,7 +511,7 @@ Video Background
   justify-content: center;
   align-items: center;
   text-align: center;
-  outline: 2px solid red;
+  /* outline: 2px solid red; */
 }
 
 .social-icons {
@@ -818,6 +821,27 @@ img {
   font-weight: 300;
   line-height: 19px;
   transition: all .2s;
+}
+
+.wishlist-button {
+  pointer-events: auto;
+  background-color: #fdd08c;
+
+  border-radius: 20px 5px; 
+}
+
+.presskit-button {
+  pointer-events: auto;
+  background-color: #fdd08c;
+  border: none;
+  padding: 15px 32px; 
+  text-align: center; 
+  text-transform: uppercase;
+  text-decoration-thickness: 5px;
+  color: white;
+  mix-blend-mode: normal;
+  border-radius: 20px 5px; 
+  font-size: 16px;
 }
 
 .button:hover {
