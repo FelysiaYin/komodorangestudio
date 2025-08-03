@@ -53,8 +53,8 @@
       <img src="./froggy_media/website_memory.png" alt="Memory sticker" class="sticker sticker-bottom-right">
       <div class="border-content">
         <pre class="game-heading"> BREW TEA   MAKE FRIENDS   UNCOVER SECRETS </pre><br>
-        <h3 class="game-heading" style="font-weight: 400; padding-left: 100px; padding-right: 100px;" >Froggy Brews is a cozy 2D top-down game where you play as a frog who runs a tea-house. Explore vibrant landscapes, forage for rare ingredients, brew custom teas,a nd serve a variety of NPCs—each with unique stories, quests, and connections to uncover.</h3><br>
-        <h3 class="game-heading" style="font-weight: 600;font-size: 40px;">WISHLIST NOW</h3><br><br>
+        <h3 class="game-heading" style="font-weight: 400; padding-left: 100px; padding-right: 100px;" >Froggy Brews is a cozy 2D top-down game where you play as a frog who runs a tea-house. Explore vibrant landscapes, forage for rare ingredients, brew custom teas, and serve a variety of NPCs—each with unique stories, quests, and connections to uncover.</h3><br>
+        <h3 class="game-heading" style="font-weight: 600;font-size: 40px;">WISHLIST NOW</h3><br>
         <div> 
           <a href="https://store.steampowered.com/app/3814270/Froggy_Brews/" target="_blank" class="wishlist-button">Steam</a>
         </div>
@@ -89,21 +89,90 @@
     </div>
   </section>
   <section class="description-section">
-    <div class="content-border">
-      <img src="./froggy_media/website_popularity.png" alt="Star sticker" class="sticker sticker-star2"> <!--works for now-->
+    <!-- <div class="content-border">
+      <img src="./froggy_media/website_popularity.png" alt="Star sticker" class="sticker sticker-star2"> 
           <img src="./froggy_media/website_maincontent_box_2.png" alt="Website border" class="border-image2">
             <div class="border-content">
-              <h2 game-heading>PLAY AS A GFROG TEA MAKER & CREATE UNIQUE TEA BREWS</h2>
-              <h2 game-heading>GET TO KNOW YOUR FELLOW VILLAGERS BY BUILDING HEARTFELT CONNECTIONS</h2>
-              <h2 game-heading>UNCOVER SECRETS AND EXPLORE THE WHIMSICAL WORLD OF BLOOMVILLE</h2>
-              <h2 game-heading> HEAL, GROW, AND LEARN TO LET GO OF YOUR PAST</h2>
+              <h3 class="game-heading">PLAY AS A FROG TEA MAKER & CREATE UNIQUE TEA BREWS</h3><br>
+              <h3 class="game-heading">GET TO KNOW YOUR FELLOW VILLAGERS BY BUILDING HEARTFELT CONNECTIONS</h3><br>
+              <h3 class="game-heading">UNCOVER SECRETS AND EXPLORE THE WHIMSICAL WORLD OF BLOOMVILLE</h3><br>
+              <h3 class="game-heading"> HEAL, GROW, AND LEARN TO LET GO OF YOUR PAST</h3>
             </div>
-        </div>
+        </div> -->
         <div class="content-border">
             <img src="./froggy_media/website_maincontent_box_3.png" alt="Website border" class="border-image3">
-            <div class="border-content">
-            <h2 game-heading>SCREENSHOTS</h2>
-          </div>
+            <div class="border-content" style="top: 48%">
+              <h3 class="game-heading" style="font-weight: 800; font-size: 35px;">SCREENSHOTS</h3>
+
+              <div class="slideshow-container">
+
+              <div class="mySlides fade">
+                <div class="numbertext">1 / 10</div>
+                <img src="./froggy_media/01_Screenshot_TeaBrewing.png" alt="screenshot1" style="width:100%">
+              </div>
+
+              <div class="mySlides fade">
+                <div class="numbertext">2 / 10</div>
+                <img src="./froggy_media/02_Screenshots_TeaHouse 3.png" style="width:100%">
+              </div>
+
+              <div class="mySlides fade">
+                <div class="numbertext">3 / 10</div>
+                <img src="./froggy_media/03_Screenshot_TeaBrewing 2.png" style="width:100%">
+              </div>
+
+              <div class="mySlides fade">
+                <div class="numbertext">4 / 10</div>
+                <img src="./froggy_media/04_Screenshot_Achievements.jpg" style="width:100%">
+              </div>
+
+              <div class="mySlides fade">
+                <div class="numbertext">5 / 10</div>
+                <img src="./froggy_media/05_Screenshot_Dialogue 2.png" style="width:100%">
+              </div>
+
+              <div class="mySlides fade">
+                <div class="numbertext">6 / 10</div>
+                <img src="./froggy_media/06_Screenshot_Foraging 2.png" style="width:100%">
+              </div>
+
+              <div class="mySlides fade">
+                <div class="numbertext">7 / 10</div>
+                <img src="./froggy_media/07_Screenshot_Minigame_Pollibees 2.png" style="width:100%">
+              </div>
+
+              <div class="mySlides fade">
+                <div class="numbertext">8 / 10</div>
+                <img src="./froggy_media/08_Screenshot_FastTravel.jpg" style="width:100%">
+              </div>
+
+              <div class="mySlides fade">
+                <div class="numbertext">9 / 10</div>
+                <img src="./froggy_media/09_Screenshot_Spring.jpg" style="width:100%">
+              </div>
+
+              <div class="mySlides fade">
+                <div class="numbertext">10 / 10</div>
+                <img src="./froggy_media/10_Screenshot_Minigame_Ninja Star 3.jpg" style="width:100%">
+              </div>
+
+        <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          slides[slideIndex-1].style.display = "block";  
+          setTimeout(showSlides, 2500); 
+        }
+        </script>
+            </div>
         </div>
     </section>
     <section class="presskit-section">
