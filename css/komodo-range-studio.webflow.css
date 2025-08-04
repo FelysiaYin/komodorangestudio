@@ -663,9 +663,6 @@ img {vertical-align: middle;}
   pre.game-heading {
     font-size: 18px;
   }
-  .beach-video-bg {
-    left: -180%;
-  }
 }
 
 /* Responsive Adjustments */
@@ -682,6 +679,9 @@ img {vertical-align: middle;}
   }
   .game-page {
     width: 100%;
+  }
+  .beach-video-bg {
+    left: -180%;
   }
   .hero-logo-container {
     width: 400px;
