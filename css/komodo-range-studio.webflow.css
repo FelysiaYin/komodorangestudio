@@ -243,14 +243,14 @@ pre.game-heading {
 
 .sticker-top-left {
   top: -30px;
-  left: -60px;
+  left: -50px;
   width: 180px;
   z-index: 10;
 }
 
 .sticker-bottom-right {
   bottom: -10px;
-  right: -60px;
+  right: -40px;
   width: 180px;
 }
 
@@ -506,8 +506,13 @@ Video Background
   /* background-color: #fbf9e4; */
   /* height: 1872px; */
   width: 100%; 
+  height: auto;
+  max-height: 1872px;
   padding: 70px;
   margin-top: -1px;
+  display: flex;
+  justify-content: center;
+
   /* outline: 1px solid red; */
 }
 
