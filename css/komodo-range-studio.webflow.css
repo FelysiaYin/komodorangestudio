@@ -663,6 +663,9 @@ img {vertical-align: middle;}
   pre.game-heading {
     font-size: 18px;
   }
+  .beach-video-bg {
+    left: -180%;
+  }
 }
 
 /* Responsive Adjustments */
