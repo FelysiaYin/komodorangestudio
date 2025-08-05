@@ -48,6 +48,7 @@ h5.game-heading {
   font-weight: 700;
   padding-bottom: 10px;
 }
+
 .game-page .game-nav-wrapper {
   width: 100%;
   position: relative;
@@ -655,7 +656,6 @@ img {vertical-align: middle;}
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
   .text {font-size: 11px}
-  
 }
 
 @media (max-width: 1240px) {
