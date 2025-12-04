@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!--Yes you found this message through using Google view source, which brings you to the next clue.... JAJAJA-->
+<!--Yes you found this message through your super spy skills, which brings you to the next clue.... JAJAJA-->
 <html data-wf-page="66ebcd83a6f57e3c8f2832ad" data-wf-site="66ebcd82a6f57e3c8f2831db">
   <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -154,7 +154,7 @@
                 <img src="./froggy_media/10_Screenshot_Minigame_Ninja Star 3.jpg" style="width:100%">
               </div>
 
-              <!--thank u W3Schools-->
+              <!--thank u W3Schools lol-->
         <script>
         let slideIndex = 0;
         showSlides();
@@ -176,7 +176,53 @@
     </section>
     <section class="presskit-section">
       <a href="https://drive.google.com/drive/folders/1YVEHe8eiCqTRXUupudHSFDvAgMv5BBuE" target="_blank" class="game-button">Press kit</a>
+    </section>
 
+    <section class="teams-section">
+      <!-- <div class="content-border"> -->
+        
+        <h5 class="game-heading">MEET OUR TEAM</h5>
+        <div class="teamslideshow-container">
+          <div class="myteamSlides fade">
+            <img src="./team_photos/Team-Portraits_01b.png" style="width:100%">
+          </div>
+
+          <div class="myteamSlides fade">
+            <img src="./team_photos/Team-Portraits_02.png" style="width:100%">
+          </div>
+
+          <div class="myteamSlides fade">
+            <img src="./team_photos/Team-Portraits_03.png" style="width:100%">
+        </div>
+
+        <a class="prev" onclick="plusteamSlides(-1)">❮</a>
+        <a class="next" onclick="plusteamSlides(1)">❯</a>
+        <!-- </div> -->
+        </div>
+
+        <script>
+        let teamslideIndex = 1;
+        showteamSlides(teamslideIndex);
+
+        function plusteamSlides(n) {
+          showteamSlides(teamslideIndex += n);
+        }
+
+        function currentteamSlide(n) {
+          showteamSlides(teamslideIndex = n);
+        }
+
+        function showteamSlides(n) {
+          let i;
+          let teamslides = document.getElementsByClassName("myteamSlides");
+          if (n > teamslides.length) {teamslideIndex = 1}    
+          if (n < 1) {teamslideIndex = teamslides.length}
+          for (i = 0; i < teamslides.length; i++) {
+            teamslides[i].style.display = "none";  
+          }
+          teamslides[teamslideIndex-1].style.display = "block";  
+        }
+        </script>
     </section>
 
     <section class="newsletter-section">

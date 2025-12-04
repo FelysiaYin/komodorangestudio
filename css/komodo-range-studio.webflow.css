@@ -47,6 +47,8 @@ h5.game-heading {
   font-size: 32px;
   font-weight: 700;
   padding-bottom: 10px;
+  display: flex;
+  justify-content: center;
 }
 
 .game-page .game-nav-wrapper {
@@ -253,7 +255,7 @@ h5.game-heading {
   width: min(90%, 1152px);
   margin: 0 auto 70px; 
   justify-content: center;
-  display: flex;
+  display:flexbox;
   /*width: 90%; 
   height: 80%;
   max-width: 900px; 
@@ -555,6 +557,110 @@ Video Background
   justify-content: center;
 }
 
+.teams-section{
+  background-color: white;
+  width: 100%;
+  height: 500px;
+  /* display: flex; */
+  justify-content: center;
+  margin-bottom: -16px;
+  padding-top: 2%;
+}
+
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.teamslideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 6px;
+  margin-top: -22px;
+  background-color: #cbaae3;
+  font-weight: 0;
+  font-size: 5px;
+  transition: 0.6s ease;
+  border-radius: 0 2px 2px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color*/
+.prev:hover, .next:hover {
+  background-color: #927aa4;
+}
+
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+
+.team-three{
+  position: relative;
+  margin: auto;
+}
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.team-row {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.teammate-column {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.teammate-container {
+  text-align: left;
+  padding: 15px 20px;
+}
+
+
 .newsletter-section {
   height: 700px;
   width: 100%;
@@ -681,7 +787,7 @@ img {vertical-align: middle;}
     width: 100%;
   }
   .beach-video-bg {
-    left: -180%;
+    left: -140%;
   }
   .hero-logo-container {
     width: 400px;
